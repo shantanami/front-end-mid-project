@@ -8,12 +8,12 @@ import Works from "/.components/Works";
 const App = () => {
   return (
     <div>
-      <About />
-      <Contact />
-      <Footer />
       <Header />
       <Home />
+      <About />
       <Works />
+      <Contact />
+      <Footer />
     </div>
   );
 };
