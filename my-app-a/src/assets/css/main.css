@@ -57,7 +57,7 @@
  *
  * ------------------------------------------------------------------- */
 
-@import url("iconic/css/iconmonstr-iconic-font.min.css");
+@import url("./iconic/css/iconmonstr-iconic-font.min.css");
 @import url("fonts.css");
 
 /* ===================================================================
@@ -2672,7 +2672,7 @@ html.no-csstransitions .home-content__main {
 
 .s-testimonials {
   background-color: #0d0a0b;
-  background-image: url("../images/testimonial-bg.jpg");
+  background-image: url("/images/testimonial-bg.jpg");
   background-repeat: no-repeat;
   background-position: center, center;
   padding-top: 9.6rem;
@@ -3010,7 +3010,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .stats__col--highlight {
-  background: #111111 url("../images/count-bg.jpg");
+  background: #111111 url("/images/count-bg.jpg");
   background-size: 175px 175px;
   position: relative;
 }
@@ -3092,7 +3092,7 @@ html.no-csstransitions .home-content__main {
 
 .s-contact {
   background-color: #151515;
-  background-image: url("../images/bgl20.jpg");
+  background-image: url("/images/bgl20.jpg");
   background-repeat: no-repeat;
   background-position: center, center;
   padding-top: 13.2rem;
