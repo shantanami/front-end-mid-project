@@ -1,3 +1,5 @@
+import React from "react";
+
 const Works = () => {
   return (
     <section id="works" className="s-works target-section">
