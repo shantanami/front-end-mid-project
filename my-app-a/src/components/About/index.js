@@ -9,7 +9,7 @@ const About = () => {
           <h1>More About Me</h1>
           <div style={{ textAlign: "center" }}>
             <img
-              src="images/aboutme.jpg"
+              src="images/Mikha.jpg"
               alt="Mikha Kussoy"
               style={{ width: "450px", height: "200px", marginBottom: "20px" }}
             />

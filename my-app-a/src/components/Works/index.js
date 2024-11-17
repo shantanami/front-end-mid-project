@@ -22,13 +22,13 @@ const Works = () => {
             <div className="item-folio">
               <div className="item-folio__thumb">
                 <a
-                  href="images/partytonight.jpg"
+                  href="images/Trailblazing.jpg"
                   className="thumb-link"
                   data-size="1050x1500"
                 >
                   <img
-                    src="images/partytonight.jpg"
-                    srcSet="images/partytonight.jpg 1x, images/partytonight@2x.jpg 2x"
+                    src="images/Trailblazing.jpg"
+                    srcSet="images/Trailblazing.jpg 1x, images/Trailblazing@2x.jpg 2x"
                     alt=""
                   />
                   <span className="shadow-overlay"></span>
@@ -58,13 +58,13 @@ const Works = () => {
             <div className="item-folio">
               <div className="item-folio__thumb">
                 <a
-                  href="images/yr.jpg"
+                  href="images/Yearning.jpg"
                   className="thumb-link"
                   data-size="1050x1500"
                 >
                   <img
-                    src="images/yr.jpg"
-                    srcSet="images/yr.jpg 1x, images/yr@2x.jpg 2x"
+                    src="images/Yearning.jpg"
+                    srcSet="images/Yearning.jpg 1x, images/Yearning@2x.jpg 2x"
                     alt=""
                   />
                   <span className="shadow-overlay"></span>
@@ -98,13 +98,13 @@ const Works = () => {
             <div className="item-folio">
               <div className="item-folio__thumb">
                 <a
-                  href="images/pr.jpg"
+                  href="images/Mystic Force.jpg"
                   className="thumb-link"
                   data-size="1050x1500"
                 >
                   <img
-                    src="images/pr.jpg"
-                    srcSet="images/pr.jpg 1x, images/pr@2x.jpg 2x"
+                    src="images/Mystic Force.jpg"
+                    srcSet="images/Mystic Force.jpg 1x, images/Mystic Force@2x.jpg 2x"
                     alt=""
                   />
                   <span className="shadow-overlay"></span>
@@ -134,13 +134,13 @@ const Works = () => {
             <div className="item-folio">
               <div className="item-folio__thumb">
                 <a
-                  href="images/yb.jpg"
+                  href="images/Yobel.jpg"
                   className="thumb-link"
                   data-size="1050x1500"
                 >
                   <img
-                    src="images/yb.jpg"
-                    srcSet="images/yb.jpg 1x, images/yb@2x.jpg 2x"
+                    src="images/Yobel.jpg"
+                    srcSet="images/Yobel.jpg 1x, images/Yobel@2x.jpg 2x"
                     alt=""
                   />
                   <span className="shadow-overlay"></span>

@@ -11,6 +11,7 @@ const firebaseConfig = {
   storageBucket: "front-end-mid-project.firebasestorage.app",
   messagingSenderId: "120044360664",
   appId: "1:120044360664:web:788777805be4b7f425d8ad",
+  databaseURL: "https://front-end-mid-project-default-rtdb.firebaseio.com/",
 };
 
 // Initialize Firebase
