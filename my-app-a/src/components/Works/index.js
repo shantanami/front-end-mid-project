@@ -24,7 +24,6 @@ const Works = () => {
                 <a
                   href="images/partytonight.jpg"
                   className="thumb-link"
-                  title="partytonight"
                   data-size="1050x1500"
                 >
                   <img
@@ -61,7 +60,6 @@ const Works = () => {
                 <a
                   href="images/yr.jpg"
                   className="thumb-link"
-                  title="Yearning"
                   data-size="1050x1500"
                 >
                   <img

@@ -7,6 +7,7 @@ import "./assets/css/base.css";
 import "./assets/css/fonts.css";
 import "./assets/css/vendor.css";
 import "./assets/css/main.css";
+import "./config/Firebase";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
