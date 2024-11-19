@@ -1,32 +1,33 @@
+import React from "react";
+
 const Footer = () => {
   return (
-    <nav
-      className="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <a
-        href="index.html"
-        className="navbar-brand d-flex align-items-center px-4 px-lg-5"
-      >
-        <h1 className="m-0 text-primary">MHC</h1>
-      </a>
-      <button
-        type="button"
-        className="navbar-toggler me-4"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span className="navbar-toggler-icon" />
-      </button>
-      <div className="collapse navbar-collapse" id="navbarCollapse">
-        <a
-          href
-          className="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block"
-        >
-          Appointment
+    <section className="footer">
+      <div className="header-footer">
+        <h2>Social</h2>
+      </div>
+      <div className="content-foot"></div>
+      <div className="sosmed">
+        <a href="https://www.instagram.com/shhantana/#">
+          <div
+            className="icon-sosmed"
+            style={{ backgroundImage: "url(/images/Ig.png)" }}
+          ></div>
+        </a>
+        <a href="https://github.com/shantanami">
+          <div
+            className="icon-sosmed"
+            style={{ backgroundImage: "url(/images/Github.png)" }}
+          ></div>
+        </a>
+        <a href="https://wa.me/+6282114830406">
+          <div
+            className="icon-sosmed"
+            style={{ backgroundImage: "url(/images/Wa.png)" }}
+          ></div>
         </a>
       </div>
-    </nav>
+    </section>
   );
 };
 

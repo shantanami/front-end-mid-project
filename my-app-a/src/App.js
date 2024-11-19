@@ -1,16 +1,21 @@
 import React from "react";
-import About from "./components/About";
-import Contact from "./components/Contact";
+import Profile from "./components/Profile";
+import Skills from "./components/Skills";
+import Education from "./components/Education";
+import Interests from "./components/Interests";
+import Photography from "./components/Photography";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Home from "./components/Intro";
-import Works from "./components/Works";
-import Works from "./components/Main";
-
 
 const App = () => {
   return (
-
+    <div>
+      <Profile />
+      <Skills />
+      <Education />
+      <Interests />
+      <Photography />
+      <Footer />
+    </div>
   );
 };
 
