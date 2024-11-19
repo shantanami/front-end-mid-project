@@ -1,6 +1,20 @@
 import React from "react";
 
+import { ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+import { database } from "../../config/Firebase/firebase"; // Sesuaikan jalur impor dengan struktur folder Anda
+
 const Skills = () => {
+  const [skills, setSkills] = useState({});
+
+  useEffect(() => {
+    const skillsRef = ref(database, "skills/");
+    onValue(skillsRef, (snapshot) => {
+      const data = snapshot.val();
+      setSkills(data);
+    });
+  }, []);
+
   return (
     <section className="skills">
       <div className="header">
@@ -10,32 +24,11 @@ const Skills = () => {
       <hr />
       <div className="content">
         <h5>UI/UX Design</h5>
-        <p>
-          Skilled in using Figma to create interactive prototypes that show how
-          designs work and look. Experienced in making wireframes, mockups, and
-          clickable prototypes to test user experiences. Able to work with teams
-          to improve designs based on feedback and make sure they meet project
-          goals.
-        </p>
+        <p>{skills.figma}</p>
         <h5>Multimedia and Editing</h5>
-        <p>
-          I have strong skills in multimedia and editing, with proficiency in
-          using Canva to design visually appealing graphics, presentations, and
-          marketing materials. I am experienced in creating custom layouts,
-          selecting fonts, and editing images to produce high-quality content
-          that aligns with brand guidelines and effectively communicates the
-          intended message.
-        </p>
+        <p>{skills.multimediaEditing}</p>
         <h5>JavaScript</h5>
-        <p>
-          "Skilled in JavaScript, specializing in building React applications
-          integrated with Firebase. Experienced in creating dynamic and
-          responsive user interfaces, managing state, and handling real-time
-          data with Firebase. Proficient in using modern ES6+ features for clean
-          and efficient coding. Focused on delivering interactive, user-friendly
-          web applications with a strong emphasis on performance and
-          scalability."
-        </p>
+        <p>{skills.js}</p>
       </div>
     </section>
   );

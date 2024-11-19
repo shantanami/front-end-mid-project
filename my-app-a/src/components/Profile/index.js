@@ -1,10 +1,28 @@
 import React from "react";
 
+import { ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+import { database } from "../../config/Firebase/firebase"; // Sesuaikan jalur impor dengan struktur folder Anda
+import { Fade } from "react-awesome-reveal";
+
 const Profile = () => {
+  const [profile, setProfile] = useState({});
+
+  useEffect(() => {
+    const profileRef = ref(database, "profile/");
+    onValue(profileRef, (snapshot) => {
+      const data = snapshot.val();
+      setProfile(data);
+    });
+  }, []);
+
   return (
     <div className="profile">
       <div className="photo">
-        <img src="/images/Profile.jpg" alt="profile" />
+        <img
+          src={`data:image/jpeg;base64, ${profile.imageProfile}`}
+          alt="Profile"
+        />
         <div className="badge" />
       </div>
       <h1 id="nama">
@@ -15,13 +33,13 @@ const Profile = () => {
       <div className="profesi"> College Student</div>
       <nav className="email">
         <ul>
-          <li>Full Name: Mikha Shantana Miracle Kussoy</li>
-          <li>Address: Beringin Road, Girian, North Sulawesi</li>
-          <li>Date of Birth: March, 31 2004</li>
-          <li>Nationality: Indonesian</li>
-          <li>Languages: Indonesian and English</li>
-          <li>Phone: +6282114830406</li>
-          <li>Email: mikhashantana@gmail.com</li>
+          <li>{profile.fullName}</li>
+          <li>{profile.address}</li>
+          <li>{profile.dateOfBirth}</li>
+          <li>{profile.nationality}</li>
+          <li>{profile.languages}</li>
+          <li>{profile.phone}</li>
+          <li>{profile.email}</li>
         </ul>
       </nav>
     </div>

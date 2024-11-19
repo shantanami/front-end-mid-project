@@ -8,13 +8,15 @@ import { getDatabase } from "firebase/database";
 const firebaseConfig = {
   apiKey: "AIzaSyAfF1_-HrkvRxb7QBRO0g1HWk3E3Ma4X8I",
   authDomain: "front-end-mid-project.firebaseapp.com",
+  databaseURL: "https://front-end-mid-project-default-rtdb.firebaseio.com",
   projectId: "front-end-mid-project",
   storageBucket: "front-end-mid-project.firebasestorage.app",
   messagingSenderId: "120044360664",
   appId: "1:120044360664:web:788777805be4b7f425d8ad",
-  databaseURL: "https://front-end-mid-project-default-rtdb.firebaseio.com/",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const database = getDatabase(app);
+const database = getDatabase(app);
+
+export { database };

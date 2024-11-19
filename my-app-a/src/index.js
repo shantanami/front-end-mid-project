@@ -4,6 +4,7 @@ import "./index.css";
 import "./assets/css/cv_mikha_style.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import "./config/Firebase/firebase";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
